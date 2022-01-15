@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+#root {
+  font-family: "Bree Serif", serif;
+  --background: #c14040;
+  --card: #982c2c;
+  --card-hover: #7e1c1c;
+  --white: #efe3e3;
+  --Steel: #aaaabb;
+  --Fighting: #bb5544;
+  --Dragon: #7766ee;
+  --Water: #3399ff;
+  --Electric: #ffbb33;
+  --Fire: #ff4422;
+  --Ice: #77ddff;
+  --Bug: #aabb22;
+  --Normal: #bbaabb;
+  --Grass: #77cc55;
+  --Poison: #aa5599;
+  --Psychic: #ff5599;
+  --Rock: #bbaa66;
+  --Ground: #ddbb55;
+  --Ghost: #6666bb;
+  // --tenebres: #665544;
+  --Flying: #6699ff;
+  --progress: #632b2b;
+}
+/* container */
+.container {
+  width: 60vw;
+  margin: auto;
+  list-style: none;
+}
+/*header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 1.5em;
+  border-radius: 2em;
+  color: var(--background);
+  margin-bottom: 1em;
+  &__title {
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__list-item {
+    margin: 0.3em;
+    font-size: 1.2em;
+  }
+  &__list-link {
+    text-decoration: none;
+    color: var(--background);
+  }
+}
+.wrapper-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+}
+.wrapper-card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 20px;
+  /* text-align: center; */
+}
+
+.card {
+  padding: 1em;
+  background-color: var(--card);
+  border-radius: 10%;
+  text-decoration: none;
+  color: var(--white);
+}
+.card:hover {
+  background-color: var(--card-hover);
+}
+.index__img {
+  width: 80%;
+}
+.pokemon__img {
+  width: 100%;
+}
