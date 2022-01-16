@@ -8,3 +8,11 @@ export default function findPokemon(id) {
 
   return pokemon;
 }
+export function getTypes(types) {
+  const allTypes = [...new Map(types.map((el) => el.type))];
+  const result = [];
+  allTypes.filter((el) => el.forEach((type) => result.push(type)));
+  const newArray = ([...new Set(result.filter((el) => el))]);
+  // console.log(newArray);
+  return newArray;
+}

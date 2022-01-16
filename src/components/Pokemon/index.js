@@ -29,7 +29,7 @@ export default function Pokemon() {
               <li>{stat}</li>
               <li>{Object.values(pokemon.base)[index]}</li>
               <li className="stat__bar">
-                <div style={{ width: `${(Object.values(pokemon.base)[index] * 100 / 255)}%` }} className="stat__bar-value"/>
+                <div style={{ width: `${(Object.values(pokemon.base)[index] * 100 / 255)}%` }} className="stat__bar-value" />
               </li>
             </ul>
           ))}
