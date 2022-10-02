@@ -11,8 +11,8 @@ export default function Types({ types }) {
         <h2 className="title__page">Cliquez sur un type pour voir tous les Pokémon de ce type</h2>
         <article>
           <ul className="wrapper__type">
-            {types.map((el) => (
-              <li key={el}><Link to={`/search/${el}`} className="type__block" style={{ backgroundColor: `var(--${el})` }}> {el}</Link></li>
+            {types.map((type) => (
+              <li key={type}><Link to={`/search/${type}`} className="type__block" style={{ backgroundColor: `var(--${type})` }}> {type}</Link></li>
             ))}
           </ul>
         </article>

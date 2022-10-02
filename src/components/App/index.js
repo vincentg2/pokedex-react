@@ -15,6 +15,8 @@ function App() {
         <Route path="/" element={<Pokedex pokedex={data} />} />
         <Route path="/pokemon/:id" element={<Pokemon />} />
         <Route path="/type" element={<Types types={types} />} />
+        <Route path="/search/:id" element={<Pokedex pokedex={data} />} />
+
       </Routes>
     </div>
   );

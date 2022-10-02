@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import findPokemon from 'src/selector';
 import './style.scss';
 
@@ -21,7 +21,7 @@ export default function Pokemon() {
         <article className="info__pokemon">
           <h3 className="info__title">#{pokemon.id} {pokemon.name.english}</h3>
           {pokemon.type.map((element) => (
-            <a href="/search/" key={element} style={{ backgroundColor: `var(--${element})` }} className="into__type">{element}</a>
+            <Link to={`/search/${element}`} key={element} style={{ backgroundColor: `var(--${element})` }} className="into__type">{element}</Link>
           ))}
           <h4 className="info__subtitle">Statistiques</h4>
           {Object.getOwnPropertyNames(pokemon.base).map((stat, index) => (
